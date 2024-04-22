@@ -1,0 +1,103 @@
+*{  
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}    
+body{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.123),rgba(4, 9, 30, 0.356)),url(img/background.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    }
+p{
+    font-family: 'poppins';
+    font-weight: 600 bold;
+}
+nav {
+        display: flex;
+        padding: 2% 6%;
+        justify-content: space-between;
+        align-items: center;
+    }
+    nav img {
+        width: 150px;
+        cursor: pointer;
+    }
+    nav {
+        flex: 1;
+        text-align: right;
+    }
+    nav ul li{
+        list-style: none;
+        display: inline-block;
+        padding: 8px 12px;
+        position: relative;
+    }
+    nav ul li a{
+        color: #fff;
+        text-decoration: none;
+        font-size: 16px;
+    }
+    nav ul li::after{
+        content: '';
+        width: 0%;
+        height: 2px;
+        background: #cf5720;
+        display: block;
+        margin: auto;
+        transition: 0.5s;
+    }
+    nav ul li:hover::after{
+        width: 100%;
+    }
+#About{
+    margin-top: 20px;
+    margin-left: 50px;
+    justify-content: space-around;
+}
+section{
+    padding: 50px 20px;
+    text-align: center;
+}
+.project{
+    margin-bottom: 20px;
+}
+.project img{
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 100px;
+    justify-content: center;
+}
+h2, h1, h3 :hover{
+    font-family: cursive;
+}
+footer{
+    border: 20px  aliceblue solid ;
+    display: flex;
+    min-height: 100px;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 10px;
+}
+footer ul{
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+}
+footer ul li{
+    list-style: none;
+    padding-right: 20px;
+}
+footer ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+footer ul li  :hover{
+    color: #cf5720;
+
+}
